@@ -4,7 +4,7 @@ import Auth from "./routes/auth/auth.routes";
 const app = express();
 
 connectDB();
-app.use(Auth);
+app.use("/api/auth/", Auth);
 
 const PORT = process.env.PORT | 5000;
 
